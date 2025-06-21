@@ -1,0 +1,42 @@
+# Core RL and ML libraries
+torch>=1.12.0
+torchvision>=0.13.0
+numpy>=1.21.0
+gym>=0.21.0
+gym[box2d]>=0.21.0
+
+# Data manipulation and analysis
+pandas>=1.4.0
+scipy>=1.8.0
+
+# Visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+plotly>=5.0.0
+
+# Configuration management
+pyyaml>=6.0
+omegaconf>=2.2.0
+
+# Progress tracking and logging
+tqdm>=4.64.0
+tensorboard>=2.9.0
+wandb>=0.12.0
+
+# Image and video processing
+opencv-python>=4.5.0
+imageio>=2.19.0
+imageio-ffmpeg>=0.4.7
+
+# Jupyter notebook support
+jupyter>=1.0.0
+ipykernel>=6.0.0
+ipywidgets>=7.7.0
+
+# Development and testing
+pytest>=7.0.0
+black>=22.0.0
+flake8>=4.0.0
+
+# System utilities
+psutil>=5.9.0 

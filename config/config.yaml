@@ -1,0 +1,63 @@
+# Lunar Lander Double DQN Configuration
+
+# Environment settings
+environment:
+  name: "LunarLander-v3"  #CartPole-v1 or LunarLander-v3
+  render_mode: "rgb_array"  # "human" for visualization during training
+  seed: 42
+
+# Agent hyperparameters
+agent:
+  learning_rate: 0.001
+  gamma: 0.99  # Discount factor
+  epsilon_start: 1.0
+  epsilon_end: 0.01
+  epsilon_decay: 0.995
+  batch_size: 64
+  memory_size: 100000
+  target_update_frequency: 100  # Episodes
+  double_dqn: true
+
+# Neural network architecture
+network:
+  hidden_layers: [128, 128]
+  activation: "relu"
+  dropout_rate: 0.1
+  
+# Training parameters
+training:
+  max_episodes: 500
+  max_steps_per_episode: 1000
+  learning_starts: 1000  # Start learning after this many steps
+  train_frequency: 4  # Train every N steps
+  save_frequency: 100  # Save model every N episodes
+  eval_frequency: 50  # Evaluate model every N episodes
+  early_stopping_patience: 100  # Stop if no improvement for N episodes
+
+# Evaluation parameters
+evaluation:
+  num_episodes: 10
+  render: true
+  save_video: true
+  
+# Logging and visualization
+logging:
+  log_frequency: 10  # Log every N episodes
+  use_tensorboard: true
+  use_wandb: false
+  project_name: "lunar_lander_double_dqn"
+  save_plots: true
+  plot_frequency: 50
+
+# Paths
+paths:
+  models_dir: "saved_models"
+  results_dir: "results"
+  logs_dir: "logs"
+  videos_dir: "videos"
+
+# Success criteria
+success_criteria:
+  target_score: 200
+  consecutive_successes: 10
+  success_threshold: 0.9  # 90% success rate  

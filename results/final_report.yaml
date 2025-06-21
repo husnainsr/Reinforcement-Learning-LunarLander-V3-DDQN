@@ -1,0 +1,54 @@
+agent_stats:
+  avg_loss: !!python/object/apply:numpy._core.multiarray.scalar
+  - &id001 !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - false
+    - true
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    lkNLROvhNEA=
+  avg_q_value: !!python/object/apply:numpy._core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f4
+    - false
+    - true
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    yKtzPw==
+  episode_count: 500
+  epsilon: 0.00998645168764533
+  memory_size: 100000
+  step_count: 188569
+best_avg_score: !!python/object/apply:numpy._core.multiarray.scalar
+- *id001
+- !!binary |
+  259diPlPPUA=
+final_avg_score: !!python/object/apply:numpy._core.multiarray.scalar
+- *id001
+- !!binary |
+  OlIn+NExE0A=
+final_evaluation_score: !!python/object/apply:numpy._core.multiarray.scalar
+- *id001
+- !!binary |
+  zgmTfNkHJkA=
+success_rate: 0.29
+total_episodes: 500
+training_time_minutes: 4.699772000312805

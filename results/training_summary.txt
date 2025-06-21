@@ -1,0 +1,11 @@
+Lunar Lander Double DQN Training Summary
+========================================
+
+Total Episodes: 500.0000
+Final Reward: -220.5532
+Best Reward: 289.8078
+Average Reward: -45.3756
+Reward Std: 195.3340
+Success Episodes: 106.0000
+Success Rate: 0.2120
+Final Success Rate: 0.2900
